@@ -40,17 +40,18 @@ const Contact = () => {
                                     onChange={(e) => setName(e.target.value)}
                                     required
                                 />
-                                className="form-input"
-                                type="tel"
-                                placeholder="ТЕЛЕФОН"
-                                value={phone}
-                                onChange={(e) => {
-                                    const val = e.target.value;
-                                    if (/^[0-9+\-()\s]*$/.test(val)) {
-                                        setPhone(val);
-                                    }
-                                }}
-                                required
+                                <input
+                                    className="form-input"
+                                    type="tel"
+                                    placeholder="ТЕЛЕФОН"
+                                    value={phone}
+                                    onChange={(e) => {
+                                        const val = e.target.value;
+                                        if (/^[0-9+\-()\s]*$/.test(val)) {
+                                            setPhone(val);
+                                        }
+                                    }}
+                                    required
                                 />
                                 <button type="submit" className="btn btn-cyan">ЗАПИСАТИСЬ</button>
                             </form>
