@@ -1,11 +1,5 @@
 import React from 'react';
 
-// ==========================================
-// 📁 ІНСТРУКЦІЯ: Додай свої зображення:
-//    src/assets/images/hero-bg.png     — фон залу (темний gym interior)
-//    src/assets/images/hero-person.png — бодібілдер (бажано з прозорим фоном!)
-// ==========================================
-
 const Hero = () => {
     let heroBgSrc = null;
     let heroPersonSrc = null;
@@ -18,7 +12,6 @@ const Hero = () => {
 
     return (
         <section className="hero" id="home">
-            {/* ФОН — gym interior */}
             <div className="hero-bg">
                 {heroBgSrc ? (
                     <img
@@ -33,7 +26,6 @@ const Hero = () => {
                 <div className="hero-bg-placeholder" style={{ display: heroBgSrc ? 'none' : 'block' }} />
             </div>
 
-            {/* БОДІБІЛДЕР — зліва */}
             <div className="hero-person">
                 {heroPersonSrc ? (
                     <img
@@ -48,10 +40,8 @@ const Hero = () => {
                 <div className="hero-person-placeholder" style={{ display: heroPersonSrc ? 'none' : 'block' }} />
             </div>
 
-            {/* ЗАТЕМНЕННЯ */}
             <div className="hero-overlay"></div>
 
-            {/* ТЕКСТ — справа */}
             <div className="container hero-content">
                 <div className="hero-text">
                     <h1>СИЛА.<br />ФОКУС.<br />ХАРАКТЕР.</h1>

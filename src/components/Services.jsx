@@ -1,14 +1,5 @@
 import React from 'react';
 
-// ==========================================
-// 📁 ІНСТРУКЦІЯ: Якщо хочеш свої іконки:
-//    src/assets/images/icon-strength.svg
-//    src/assets/images/icon-cardio.svg
-//    src/assets/images/icon-group.svg
-//    src/assets/images/icon-personal.svg
-// Зараз використовуються вбудовані SVG іконки.
-// ==========================================
-
 const services = [
     {
         title: 'СИЛОВІ ТРЕНУВАННЯ',

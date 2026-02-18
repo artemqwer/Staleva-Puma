@@ -1,11 +1,5 @@
 import React from 'react';
 
-// ==========================================
-// 📁 ІНСТРУКЦІЯ:
-//    src/assets/images/about-1.png — Дівчина (сидить, передній план)
-//    src/assets/images/about-2.png — Хлопець (стоїть, задній план)
-// ==========================================
-
 const About = () => {
     let about1Src = null;
     let about2Src = null;
@@ -19,11 +13,9 @@ const About = () => {
     return (
         <section className="about" id="about">
             <div className="container about-inner">
-                {/* ЛІВА ЧАСТИНА — ТЕКСТ */}
                 <div className="about-left">
                     <div className="about-label">ПРО КЛУБ</div>
 
-                    {/* Заголовок з лінією */}
                     <h2 className="about-title">
                         <span>МІСЦЕ ЗМІН</span>
                         <span className="title-line"></span>
@@ -51,9 +43,7 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* ПРАВА ЧАСТИНА — КОЛАЖ */}
                 <div className="about-collage">
-                    {/* Хлопець (задній план, справа зверху) */}
                     <div className="about-img-guy">
                         {about2Src ? (
                             <img src={about2Src} alt="Guy" onError={(e) => {
@@ -61,12 +51,8 @@ const About = () => {
                                 e.target.nextElementSibling.style.display = 'flex';
                             }} />
                         ) : null}
-                        <div className="img-placeholder" style={{ display: about2Src ? 'none' : 'flex' }}>
-                            Хлопець (about-2.png)
-                        </div>
                     </div>
 
-                    {/* Дівчина (передній план, зліва знизу) */}
                     <div className="about-img-girl">
                         {about1Src ? (
                             <img src={about1Src} alt="Girl" onError={(e) => {
@@ -74,9 +60,6 @@ const About = () => {
                                 e.target.nextElementSibling.style.display = 'flex';
                             }} />
                         ) : null}
-                        <div className="img-placeholder" style={{ display: about1Src ? 'none' : 'flex' }}>
-                            Дівчина (about-1.png)
-                        </div>
                     </div>
                 </div>
             </div>

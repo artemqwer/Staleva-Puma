@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
 
-// ==========================================
-// 📁 ІНСТРУКЦІЯ: Якщо хочеш статичну карту:
-//    src/assets/images/map.jpg
-// Або залиш Google Maps iframe (вже вбудований)
-// ==========================================
-
 const Contact = () => {
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
@@ -35,7 +29,6 @@ const Contact = () => {
                     </div>
 
                     <div className="contact-inner">
-                        {/* ФОРМА */}
                         <div className="contact-form">
                             <h3>ЗАПИСУЙСЯ І СТАВАЙ КРАЩИМ!</h3>
                             <form onSubmit={handleSubmit}>
@@ -59,7 +52,6 @@ const Contact = () => {
                             </form>
                         </div>
 
-                        {/* КАРТА */}
                         <div className="contact-map">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4!2d30.4!3d50.46!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDI3JzM2LjAiTiAzMMKwMjQnMDAuMCJF!5e0!3m2!1suk!2sua!4v1700000000000!5m2!1suk!2sua"
@@ -73,7 +65,6 @@ const Contact = () => {
                 </div>
             </section>
 
-            {/* FOOTER */}
             <footer className="footer">
                 <div className="container">
                     <div className="footer-row">

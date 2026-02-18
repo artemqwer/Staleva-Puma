@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 
-/* ===== VARIABLES ===== */
 :root {
   --cyan: #33C5F4;
   --dark-bg: #111111;
@@ -13,7 +12,6 @@
   --font-body: 'Roboto', sans-serif;
 }
 
-/* ===== RESET ===== */
 *,
 *::before,
 *::after {
@@ -56,7 +54,6 @@ img {
   padding: 0 40px;
 }
 
-/* ===== BUTTONS ===== */
 .btn {
   display: inline-block;
   padding: 12px 32px;
@@ -104,9 +101,6 @@ img {
   color: #000;
 }
 
-/* ========================================
-   HEADER
-======================================== */
 .header {
   position: absolute;
   top: 0;
@@ -170,9 +164,6 @@ img {
   font-size: 0.8rem;
 }
 
-/* ========================================
-   HERO
-======================================== */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -204,7 +195,6 @@ img {
   background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
 }
 
-/* Bodybuilder Left */
 .hero-person {
   position: absolute;
   bottom: 0;
@@ -231,7 +221,6 @@ img {
   background: linear-gradient(to right, rgba(20, 20, 20, 0.8), transparent);
 }
 
-/* Overlay */
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -246,7 +235,6 @@ img {
       rgba(0, 0, 0, 0.85) 100%);
 }
 
-/* Text Right */
 .hero-content {
   position: relative;
   z-index: 10;
@@ -283,9 +271,6 @@ img {
   gap: 15px;
 }
 
-/* ========================================
-   ABOUT — "МІСЦЕ ЗМІН"
-======================================== */
 .about {
   background-color: var(--section-bg);
   padding: 80px 0;
@@ -342,7 +327,6 @@ img {
   margin-top: 30px;
 }
 
-/* Collage */
 .about-collage {
   position: relative;
   height: 350px;
@@ -392,9 +376,6 @@ img {
   padding: 10px;
 }
 
-/* ========================================
-   SERVICES — "У НАС ВИ ЗНАЙДЕТЕ"
-======================================== */
 .services {
   background-color: var(--dark-bg);
   padding: 80px 0;
@@ -473,9 +454,6 @@ img {
   text-align: center;
 }
 
-/* ========================================
-   CONTACT — "КОНТАКТИ"
-======================================== */
 .contact {
   background-color: var(--section-bg);
   padding: 80px 0 0;
@@ -492,11 +470,9 @@ img {
 
 .contact-line {
   flex-grow: 1;
-  /* Лінія займає весь вільний простір зліва */
   height: 2px;
   background-color: var(--cyan);
   margin-top: 15px;
-  /* Вирівнювання по центру тексту */
   max-width: 65%;
 }
 
@@ -524,7 +500,6 @@ img {
 .contact-inner {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  /* Пропорції форми та карти */
   gap: 30px;
   padding-bottom: 80px;
 }
@@ -532,7 +507,6 @@ img {
 .contact-form {
   background-color: #1a1a1a;
   border: 1px solid var(--cyan);
-  /* Блакитна рамка */
   padding: 40px 30px;
   display: flex;
   flex-direction: column;
@@ -569,10 +543,8 @@ img {
 .contact-form .btn {
   margin-top: 10px;
   align-self: flex-end;
-  /* Кнопка праворуч */
 }
 
-/* MAP */
 .contact-map {
   position: relative;
   height: 100%;
@@ -588,36 +560,28 @@ img {
   filter: invert(0.9) hue-rotate(180deg) brightness(0.8) contrast(1.2);
 }
 
-/* ========================================
-   FOOTER
-======================================== */
 .footer {
-  background-color: var(--dark-bg);
-  padding: 40px 0;
-  border-top: 1px solid var(--border);
+  padding: 60px 0 20px;
+  border-top: none;
+  background-color: #111;
 }
 
-/* Плоский ряд для футера */
 .footer-row {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Центруємо ВЕСЬ ряд */
   gap: 50px;
-  /* Великі відступи */
   flex-wrap: wrap;
   width: 100%;
 }
 
 .footer-phone {
-  font-family: var(--font-heading);
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 400;
   color: var(--white);
-  letter-spacing: 1px;
 }
 
-/* Круглі кнопки соцмереж */
 .social-link {
   display: flex;
   align-items: center;
@@ -648,9 +612,7 @@ img {
 
 .footer-logo img {
   height: 70px;
-  /* Великий логотип */
   width: auto;
-  object-fit: contain;
 }
 
 .footer-logo-placeholder {
@@ -660,7 +622,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   color: #555;
   font-family: var(--font-heading);
 }
@@ -672,18 +634,15 @@ img {
   text-align: left;
 }
 
-/* Копірайт */
 .footer-bottom {
   text-align: center;
-  padding-top: 30px;
-  margin-top: 20px;
+  padding-top: 40px;
+  margin-top: 0;
+  border-top: none;
   font-size: 0.7rem;
-  color: #444;
+  color: #666;
 }
 
-/* ========================================
-   RESPONSIVE
-======================================== */
 @media (max-width: 1024px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -779,7 +738,6 @@ img {
     left: 0;
   }
 
-  /* Change Contact Layout for mobile */
   .contact-header {
     flex-direction: column;
     align-items: center;
